@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Our School</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #a8e6ff, #d0f0ff);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10%;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav .logo {
+            font-size: 24px;
+            font-weight: 600;
+            color: white;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: 0.3s ease-in-out;
+        }
+        nav ul li a:hover {
+            color: #ffdd57;
+        }
+
+        /* Content Styling */
+        .container {
+            background: linear-gradient(135deg, #ffffff, #e0f7ff);
+            padding: 40px 30px;          /* Increased padding */
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 650px;             /* Increased max width */
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1.5s ease-out forwards;
+            margin-top: 80px; /* To ensure content is below navbar */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #007acc;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.8rem;             /* Slightly bigger heading */
+            font-weight: 600;
+            margin-bottom: 25px;
+            animation: slideIn 1.5s ease-in-out;
+        }
+        @keyframes slideIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .about-text {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;                  /* Softer text color */
+            margin: 20px 0;
+            text-align: justify;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;                /* Padding inside text */
+            background-color: #ffffff;    /* Slight background color */
+            border-radius: 8px;           /* Rounded corners for text box */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .about-text p {
+            font-size: 1rem;              /* Slightly smaller font for paragraphs */
+            font-weight: 400;             /* Regular weight */
+            color: #666;                  /* Lightened text color */
+            line-height: 1.6;             /* Better line spacing */
+            margin-bottom: 15px;          /* Space between paragraphs */
+        }
+
+        .image-container {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+            transition: transform 0.5s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            📚 LAMBAKIN NATIONAL HIGH SCHOOL
+        </div>
+        <ul>
+            <li><a href="HAHA.html">Home</a></li>
+            <li><a href="aboutyou.html">About</a></li>
+            <li><a href="newsss.html">News</a></li>
+            <li><a href="about1975.html">Events</a></li>
+            <li><a href="24oras.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="container">
+        <h1>Events</h1>
+        <div class="about-text">
+            <p>Welcome to our school! We are dedicated to providing a well-rounded education for students of all ages. Our school focuses on academic excellence, personal growth, and a supportive environment for learning. Through engaging classes, extracurricular activities, and a passionate staff, we aim to foster a love of learning that lasts a lifetime.</p>
+        </div>
+        <div class="image-container">
+            <h3>Our School Image</h3>
+            <img src="your-image-path.jpg" alt="School Image">
+        </div>
+    </div>
+</body>
+</html>
