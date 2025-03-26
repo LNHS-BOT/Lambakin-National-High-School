@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome to Lambakin National High School</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        /* Sticky Transparent Navbar */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+            z-index: 1000;
+            padding: 10px 0;
+            text-align: center;
+            backdrop-filter: blur(10px); /* Optional: adds a blur effect to the background */
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Add padding to the body to avoid content being hidden under the fixed navbar */
+        body {
+            padding-top: 50px; /* Adjust this value based on navbar height */
+        }
+
+        /* Hero Section Styling */
+.hero {
+    text-align: center;
+    opacity: 0;
+    animation: fadeInUp 2s forwards;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: white;  /* Changed to white for better contrast */
+}
+
+/* Animation for Fade In and Slide Up */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+        /* School Image Styling */
+        .school-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            opacity: 0;
+            animation: fadeInUp 2s forwards;
+            animation-delay: 1s; /* Delay to make the image appear after the text */
+        }
+
+        /* Main Content */
+        .container {
+            padding: 20px;
+            animation: fadeIn 2s forwards;
+            animation-delay: 2s; /* Delay to make the content fade in after intro */
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="about us.html">ABOUT US</a>
+        <a href="facultystaff.html">FACULTY STAFF</a>
+        <a href="activities.html">ACTIVITIES</a>
+        <a href="sslg.html">STUDENT COUNCIL</a>
+        <a href="registerform.html">ENROLLMENT</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to Lambakin National High School</h1>
+    </div>
+
+    <!-- School Image -->
+    <img src="lnh.jpg" alt="Lambakin National High School" class="school-image">
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>About Us</h2>
+        <p>At Lambakin National High School, we are committed to providing quality education and a nurturing environment for students to grow academically and personally.</p>
+
+        <h2>Latest News</h2>
+        <p>📢 Enrollment for the 2025-2026 school year is now open! <a href="registerform.html">Register Here</a></p>
+        <p>🎉 We Welcome our new Principal Ma'am Eliza V. Gonzales to Lambakin National Highschool.</p>
+        <p>🎉 Congratulations to our student Joelivy J. Mallare for Winning District Champion In Jaen North!</p>
+
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li>📅 April 10 - Recognition Day; Awarding of Honors</li>
+            <li>📅 April 12 - Graduation Ceremony</li>
+        </ul>
+
+        <h2>Join Us</h2>
+        <a href="registerform.html" class="cta">Enroll Now</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Lambakin National High School | All Rights Reserved
+        <p>
+            Follow us on
+            <a href="https://www.facebook.com/profile.php?id=100057147414179" target="_blank" style="color: white; text-decoration: none;">Facebook</a>
+        </p>
+    </footer>
+</body>
+</html>

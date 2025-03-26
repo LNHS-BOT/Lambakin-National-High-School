@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supreme Student Learner Government</title>
+    <style>
+          /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: 	#009E60; /* Dark Green */
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: fixed;  /* Makes the navbar fixed at the top of the page */
+            top: 0;           /* Position it at the top of the viewport */
+            left: 0;          /* Align it to the left edge of the screen */
+            width: 100%;      /* Make it span across the full width of the screen */
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            z-index: 1000;    /* Ensures the navbar stays on top of other content */
+            padding: 10px 0;  /* Adds padding to the navbar */
+            text-align: center; /* Centers the links inside the navbar */
+            backdrop-filter: blur(10px); /* Optional: Adds a blur effect to the background behind the navbar */
+		}
+		.navbar {
+            background-color: #003300; /* dark green */
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            background-color: #FFFAA0; /* Gray Tab Effect */
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* Title Styling */
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            background-color: #003300;
+            padding: 15px;
+            margin-top: 60px; /* Avoid overlap with navbar */
+        }
+
+        h1 span {
+            color: white;
+        }
+
+        /* Organization Chart */
+        .org-chart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .level {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .member {
+            width: 180px;
+            text-align: center;
+            margin: 20px;
+            padding: 10px;
+            background: #FBEC5D;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        .member p {
+            font-size: 14px;
+            margin: 5px 0;
+            font-weight: bold;
+			color: #000000;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 600px) {
+            .level {
+                flex-direction: column;
+                align-items: center;
+            }           
+        }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #003300;
+    color: #e0ffe0;
+    margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="about us.html">ABOUT US</a>
+        <a href="facultystaff.html">FACULTY STAFF</a>
+        <a href="activities.html">ACTIVITIES</a>
+        <a href="sslg.html">STUDENT COUNCIL</a>
+		 <a href="registerform.html">ENROLLMENT</a>
+    </div>
+
+    <h1>SUPREME STUDENT LEARNER GOVERNMENT 2024-2025</h1>
+
+    <!-- Organization Chart -->
+    <div class="org-chart">
+        <div class="level">
+            <div class="member">
+                <img src="pres.jpeg" alt="President">
+                <p>President</p>
+                <p>Michaela M. Halili</p>
+            </div>
+        </div>
+
+        <div class="level">
+            <div class="member">
+                <img src="vice.jpeg" alt="Vice President">
+                <p>Vice President</p>
+                <p>Mico F. Pangilinan</p>
+            </div>
+        </div>
+
+        <div class="level">
+            <div class="member">
+                <img src="sec.jpeg" alt="Secretary">
+                <p>Secretary</p>
+                <p>Jessa R. Capinpin</p>
+            </div>
+            <div class="member">
+                <img src="tres.jpeg" alt="Treasurer">
+                <p>Treasurer</p>
+                <p>Queenie DB. Buenavidez</p>
+            </div>
+            <div class="member">
+                <img src="aud.jpeg" alt="Auditor">
+                <p>Auditor</p>
+                <p>John Cedric P. Herminigildo</p>
+            </div>
+        </div>
+
+        <div class="level">
+            <div class="member">
+                <img src="bm2.jpeg" alt="Business Manager">
+                <p>Business Manager</p>
+                <p>Mark Daniel C. De Belen</p>
+            </div>
+            <div class="member">
+                <img src="bm1.jpeg" alt="Business Manager">
+                <p>Business Manager</p>
+                <p>Jayrelyn T. Udarbe</p>
+            </div>
+        </div>
+
+        <div class="level">
+            <div class="member">
+                <img src="pio1.jpeg" alt="P.I.O">
+                <p>P.I.O</p>
+                <p>Mischelle B. Rivera</p>
+            </div>
+            <div class="member">
+                <img src="po.jpeg" alt="P.O">
+                <p>P.O</p>
+                <p>Jhelsie R. Garcia</p>
+            </div>
+        </div>
+
+        <div class="level">
+            <div class="member">
+                <img src="g12.jpeg" alt="Grade 12 Representative">
+                <p>Grade 12 Representative</p>
+                <p>Aaron James A. Alcantara</p>
+            </div>
+            <div class="member">
+                <img src="g11.jpeg" alt="Grade 11 Representative">
+                <p>Grade 11 Representative</p>
+                <p>Zhahara Lyn G. Domingo</p>
+            </div>
+            <div class="member">
+                <img src="g10.jpeg" alt="Grade 10 Representative">
+                <p>Grade 10 Representative</p>
+                <p>Ma. Kiela G. Rocha</p>
+            </div>
+            <div class="member">
+                <img src="g9.jpeg" alt="Grade 9 Representative">
+                <p>Grade 9 Representative</p>
+                <p>Luis Andrei V. Francisco</p>
+            </div>
+            <div class="member">
+                <img src="g8.jpeg" alt="Grade 8 Representative">
+                <p>Grade 8 Representative</p>
+                <p>Jillian DC. Ison</p>
+            </div>
+            <div class="member">
+                <img src="g7.jpeg" alt="Grade 7 Representative">
+                <p>Grade 7 Representative</p>
+                <p>Russel P. Herminigildo</p>
+            </div>
+        </div>
+
+    </div>
+	<!-- Footer -->
+<footer>
+    &copy; 2025 Lambakin National High School | All Rights Reserved
+</footer>
+
+</body>
+</html>
