@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Faculty Staff</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <style>
+    /* Sticky Transparent Navbar */
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        padding: 10px 0;
+        text-align: center;
+        backdrop-filter: blur(10px);
+    }
+
+    nav a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    nav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    body {
+        padding-top: 50px;
+    }
+
+    .faculty-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .faculty-card {
+        text-align: center;
+        width: 200px;
+        padding: 10px;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .faculty-card img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .faculty-card p {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .faculty-card .info {
+        display: none;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #555;
+    }
+
+    .faculty-card:hover .info {
+        display: block;
+    }
+
+    .section-divider {
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to right, #0044cc, #00cc99);
+        margin: 30px 0;
+    }
+
+    .section-header {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 40px 0 20px;
+        color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+  <a href="index.html">HOME</a>
+  <a href="about us.html">ABOUT US</a>
+  <a href="facultystaff.html">FACULTY STAFF</a>
+  <a href="activities.html">ACTIVITIES</a>
+  <a href="sslg.html">STUDENT COUNCIL</a>
+  <a href="registerform.html">ENROLLMENT</a>
+</nav>
+
+<!-- Title -->
+<div class="hero">
+  <h1>Meet Our Faculty</h1>
+</div>
+
+<!-- Principal -->
+<div class="principal">
+  <div class="faculty-card">
+    <img src="Head.jpg" alt="Principal">
+    <h2>Principal</h2>
+    <p>Eliza V. Gonzales</p>
+    <div class="info"></div>
+  </div>
+</div>
+
+<!-- Senior High School Teachers Section -->
+<div class="section-header">Senior High School Teachers</div>
+
+<div class="faculty-container">
+  <!-- Senior High Faculty Members -->
+  <div class="faculty-card">
+    <img src="mammaricris.jpg" alt="Maricris Ayroso">
+    <p>Maricris Ayroso</p>
+    <div class="info">
+      <p>Master Teacher I</p>
+      <p>Subject: Science</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="maamabi.jpg" alt="Sarah Marie Ortiz">
+    <p>Abegail Cabral</p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject: Mathematics</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="Ma'am 0.jpg" alt="Marlon P. Dela Paz">
+    <p>Jeremy Manalo</p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject: TVL, ICT & CSS</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="mamerica.jpg" alt="Emelito Agustin">
+    <p>Kristine Erica Alarcon</p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject: English</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="mamshena.jpg" alt="Lester I. Pineda">
+    <p>Shena Casaol</p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject: English</p>
+    </div>
+  </div>
+
+  <!-- Additional Senior High Faculty Members (15 more) -->
+  <div class="faculty-card">
+    <img src="maamrowena.jpg" alt="Teacher 6">
+    <p>Rowena Castillo</p>
+    <div class="info">
+      <p>Teacher I</p>
+      <p>Subject: Science</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="Ma'am 25.jpg" alt="Teacher 7">
+    <p>Sheryl De Guzman</p>
+    <div class="info">
+      <p>Teacher II</p>
+      <p>Subject: History</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="sirjohnny.jpg" alt="Teacher 8">
+    <p>Johnny Mendoza</p>
+    <div class="info">
+      <p>Teacher II</p>
+      <p>Subject: PE</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="sirmarlon.jpg" alt="Teacher 9">
+    <p>Marlon P. Dela Paz</p>
+    <div class="info">
+      <p>Teacher I</p>
+      <p>Subject: Filipino</p>
+    </div>
+  </div>
+    <div class="faculty-card">
+    <img src="sirjoner.jpg" alt="Teacher 9">
+    <p>Joner P. Guinto</p>
+    <div class="info">
+      <p>Teacher II</p>
+      <p>Subject: Mathematics & Computer</p>
+    </div>
+  </div>
+
+
+<!-- Divider -->
+<div class="section-divider"></div>
+
+<!-- Junior High School Teachers Section -->
+<div class="section-header">Junior High School Teachers</div>
+
+<div class="faculty-container">
+  <!-- Junior High Faculty Members -->
+  <div class="faculty-card">
+    <img src="sirlasco.jpg" alt="Ernesto P. Lasco">
+    <p>Ernesto P. Lasco</p>
+    <div class="info">
+      <p>Master Teacher I</p>
+      <p>Subject: TLE (Agriculture)</p>
+    </div>
+  </div>
+    <div class="faculty-card">
+    <img src="maammikay.jpg" alt="Rhea Rose I. Balines">
+    <p>Maricar I. Maningas</p>
+    <div class="info">
+      <p>Master Teacher I</p>
+      <p>Subject:English</p>
+    </div>
+   </div>
+  <div class="faculty-card">
+    <img src="maemsarah.jpg" alt="Jessica D. Morales">
+    <p>Sarah Marie L. Ortiz</p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject: Mathematics</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="mamcy.jpg" alt="Maricris Ayroso">
+    <p>Cyrine R. Guinto</p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject: TLE (Home Economics)</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="maamsylvia.jpg" alt="Jocelyn P. Perez">
+    <p>Sylvia Reyes</p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject: Araling Panlipunan & Edukasyon sa Pagpapakatao</p>
+    </div>
+  </div>
+
+  <!-- Additional Junior High Faculty Members (15 more) -->
+  <div class="faculty-card">
+    <img src="jr.maamrochelle.jpg" alt="Teacher 21">
+    <p>Rochelle S. De Belen</p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject: Science & AP</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="maammarie.jpg" alt="Teacher 22">
+    <p>Wilmarie Grace H. Alas</p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject: English</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="mammarlyn.jpg" alt="Teacher 23">
+    <p>Marlyn Rose Manacop</p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject: Araling Panlipunan</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="mamsienna.jpg" alt="Teacher 24">
+    <p>Sienna Rizza C. De Luna </p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject: Filipino</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="mameya.jpg" alt="Teacher 25">
+    <p>Rhea Rose I. Balines</p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject: T.L.E & Computer</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="sirden.jpg" alt="Teacher 26">
+    <p>Dennis Michael S. Donato</p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject:Science</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="sirronald.jpg" alt="Teacher 27">
+    <p>Ronald S. Delos Santos</p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject: Mathematics</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="sirsio.jpg" alt="Teacher 28">
+    <p>Juanito G. Siobal</p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject: MAPEH</p>
+    </div>
+	  </div>
+  <div class="faculty-card">
+    <img src="siraries.jpg" alt="Teacher 28">
+    <p>Aries R. Bautista</p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject: AP & ESP</p>
+    </div>
+        </div>
+  
+  <div class="faculty-card">
+    <img src="mamcharmaine.jpg" alt="Teacher 29">
+    <p>Charmaine R. Santiago</p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject: Filipino</p>
+    </div>
+  </div>
+  
+    <div class="faculty-card">
+    <img src="mamlovely.jpg" alt="Teacher 29">
+    <p>Lovely Masiglat</p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject: Filipino</p>
+    </div>
+  </div>
+
+  <div class="faculty-card">
+    <img src="siremil.jpg" alt="Emelito Agustin">
+    <p>Emelito Agustin</p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject: English</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="sirlester.jpg" alt="Lester I. Pineda">
+    <p>Lester I. Pineda</p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject: English</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="sircarlo.jpg" alt="Teacher 30">
+    <p>John Carlo P. Garcia </p>
+    <div class="info">
+      <p>Teacher I</p>
+      <p>Subject: Gen Math/Statistics and Probability</p>
+    </div>
+  </div>
+<div class="faculty-card">
+    <img src="mamjadepaa.jpg" alt="Lester I. Pineda">
+    <p>Jade Ann Balaguer</p>
+    <div class="info">
+      <p>Teacher I</p>
+      <p>Subject: MAPEH</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="mamdhaine.jpg" alt="Teacher 30">
+    <p>Dhaine S. Gavino </p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject: Mathematics</p>
+    </div>
+  </div>
+    
+  <div class="faculty-card">
+    <img src="maamruth.jpg" alt="Teacher 28">
+    <p>Mary Ruth G. Galang</p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject: English</p>
+    </div>
+
+  
+   </div>
+  <div class="faculty-card">
+    <img src="mamjo.jpg" alt="Teacher 30">
+    <p>Jocelyn P. Perez</p>
+    <div class="info">
+      <p>Teacher III</p>
+      <p>Subject: ESP & AP</p>
+    </div>
+     </div>
+	   <div class="faculty-card">
+    <img src="maamcora.jpg" alt="Rhea Rose I. Balines">
+    <p></p>Corazon Sta Maria
+    <div class="info">
+      <p>Teacher I</p>
+      <p>Subject: Science</p>
+    </div>
+   </div>
+	   <div class="faculty-card">
+    <img src="sirderrick.jpg" alt="Teacher 28">
+    <p> John Derrick Carpio</p>
+    <div class="info">
+      <p>Teacher I</p>
+      <p>Subject: MAPEH</p>
+    </div>
+     </div>
+  <div class="faculty-card">
+    <img src="sirlendyl.jpg" alt="Teacher 28">
+    <p> Lendyl Bryan E. Ocampo</p>
+    <div class="info">
+      <p>Teacher I</p>
+      <p>Subject: TLE, ESP & Filipino</p>
+    </div>
+</div>
+</div>
+<!-- Footer -->
+<footer>
+  &copy; 2025 Lambakin National High School | All Rights Reserved
+</footer>
+
+</body>
+</html>
